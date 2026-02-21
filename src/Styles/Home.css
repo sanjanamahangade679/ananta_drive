@@ -1,0 +1,138 @@
+.hero {
+  width: 100%;
+  padding: 70px 20px 30px;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero-title {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-title span {
+  color: #b6ff2c;
+}
+
+.hero-desc {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #bfc9d9;
+  line-height: 1.7;
+}
+
+/* Search box */
+.search-box {
+  margin: 45px auto 30px;
+  width: 70%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 0px 30px rgba(182, 255, 44, 0.2);
+}
+
+.search-box input {
+  flex: 1;
+  padding: 18px 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.search-box select {
+  padding: 18px 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-search {
+  background: #b6ff2c;
+  border: none;
+  padding: 18px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background: #9ae61f;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+  font-size: 15px;
+  color: #bfc9d9;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Floating icons */
+.floating-icons {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 15px;
+  z-index: 999;
+}
+
+.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.chat {
+  background: #b6ff2c;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .search-box {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .search-box input,
+  .search-box select,
+  .btn-search {
+    width: 100%;
+  }
+}
+
